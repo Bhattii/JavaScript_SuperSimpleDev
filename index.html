@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Practice></title>
+	</head>
+	<body>
+		<p>YouTube Subscribe Button</p>
+		<button class="sb-btn">Subscribe</button>
+	</body>
+
+	<script>
+		// function Subscribe() {
+		// 	const buttonElement = document.querySelector('.sb-btn');
+		// 	if (buttonElement.innerText === 'Subscribe') {
+		// 		buttonElement.innerText = 'Subscribed';
+		// 	} else {
+		// 		buttonElement.innerText = 'Subscribe';
+		// 	}
+		// }
+
+		const buttonElement = document.querySelector('.sb-btn');
+		buttonElement.addEventListener('click', () => {
+			buttonElement.innerText === 'Subscribe'
+				? (buttonElement.innerText = 'Subscribed')
+				: (buttonElement.innerText = 'Subscribe');
+		});
+	</script>
+</html>
