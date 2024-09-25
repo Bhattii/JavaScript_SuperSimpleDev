@@ -7,32 +7,13 @@
 			content="width=device-width, initial-scale=1.0" />
 		<title>Practice></title>
 	</head>
-	<body>
-		<input
-			type="text"
-			class="input"
-			placeholder="cost"
-			onkeydown="handleCostKeydown(event)" />
-		<input
-			type="button"
-			value="Calculate"
-			onclick="Calculate(event)" />
-		<p class="show"></p>
-	</body>
-
+	<body></body>
 	<script>
-		function handleCostKeydown(event) {
-			if (event.key === 'Enter') {
-				Calculate();
-			}
-		}
-		function Calculate() {
-			const input = document.querySelector('.input').value;
-			const show = document.querySelector('.show');
-
-			input <= 40
-				? (show.innerText = input)
-				: (show.innerText = parseInt(input) + 10);
+		let age = prompt('Enter Your Age');
+		if (age = 18 || age =19 ) {
+			document.write('You can vote');
+		} else {
+			document.write('You cannot vote.');
 		}
 	</script>
 </html>
