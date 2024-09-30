@@ -7,6 +7,25 @@
 			content="width=device-width, initial-scale=1.0" />
 		<title>Practice</title>
 	</head>
-	<body></body>
-	<script></script>
+	<body>
+		<p>Todo List</p>
+		<input
+			type="text"
+			class="js-name-input"
+			placeholder="Todo name" />
+		<button onclick="addTodo()">Add</button>
+	</body>
+	<script>
+		const todoList = [];
+
+		function addTodo() {
+			const inputElement = document.querySelector('.js-name-input');
+			const name = inputElement.value;
+
+			todoList.push(name);
+			console.log(todoList);
+
+			inputElement.value = '';
+		}
+	</script>
 </html>
